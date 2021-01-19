@@ -1,0 +1,17 @@
+<apex:page controller="CntrlCustomLabelTrans" sidebar="false">
+    <apex:form id="form">
+        <apex:pageBlock>
+            <apex:pageBlockSection columns="1" showHeader="true" collapsible="true" title="사용자 정의 라벨 테스트">
+	        	<apex:pageBlockSectionItem>
+	                <apex:outputText value="Apex 컨트롤러에서 사용자 정의 라벨 표시"/>
+	                <apex:outputText value="{!labelTxt}"/>
+            	</apex:pageBlockSectionItem>
+
+            	<apex:pageBlockSectionItem>
+                	<apex:outputText value="Visualforce 내에서 사용자 정의 라벨 표시"/>
+                	<apex:outputText value="{!$Label.LabelApple}"/>
+            	</apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
